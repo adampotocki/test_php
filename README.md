@@ -17,6 +17,6 @@
 
 4. Import data.csv: ```php ./db/import.php```
 
-** And just in case you can drop DB: ``` php ./db/drop_db```
+** And just in case you can drop DB: ``` php ./db/drop_db.php```
 
 Your server should point to this root directory and index.php
