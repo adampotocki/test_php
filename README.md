@@ -1,6 +1,8 @@
-## Here is the student application
+## Completed test application - Student Directory
 
-Set Postgres DB Settings inside ```./db/connection.php```:
+1. Clone this repo
+
+2. Set Postgres DB Settings inside ```./db/connection.php```:
 
 ```
   DEFINE('DBHOST', 'localhost');
@@ -11,10 +13,10 @@ Set Postgres DB Settings inside ```./db/connection.php```:
 ```
 
 
-Create DB: ```php ./db/init_db.php```
+3. Create DB: ```php ./db/init_db.php```
 
-Import data.csv: ```php ./db/import.php```
+4. Import data.csv: ```php ./db/import.php```
 
-And just in case you can drop DB: ``` php ./db/drop_db```
+** And just in case you can drop DB: ``` php ./db/drop_db```
 
 Your server should point to this root directory and index.php
