@@ -2,7 +2,7 @@
 
   DEFINE('DBHOST', '127.0.0.1');
   DEFINE('DBNAME', 'test');
-  DEFINE('DBUSER', 'potockra');
+  DEFINE('DBUSER', 'test');
   DEFINE('DBPASS', '');
   DEFINE('DBPORT', '5432');
   DEFINE('TABLE_NAME', 'student_table');
