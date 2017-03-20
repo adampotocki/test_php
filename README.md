@@ -5,11 +5,12 @@
 2. Set Postgres DB Settings inside ```./db/connection.php```:
 
 ```
-  DEFINE('DBHOST', 'localhost');
-  DEFINE('DBNAME', 'students_db');
-  DEFINE('DBUSER', 'postgres');
-  DEFINE('DBPASS', 'postgres');
+  DEFINE('DBHOST', '127.0.0.1');
+  DEFINE('DBNAME', 'test');
+  DEFINE('DBUSER', 'test');
+  DEFINE('DBPASS', '');
   DEFINE('DBPORT', '5432');
+  DEFINE('TABLE_NAME', 'student_table');
 ```
 
 
