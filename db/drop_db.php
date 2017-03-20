@@ -10,7 +10,7 @@
           $sql = 'drop database ' . DBNAME . ';';
           $stmt = Connection::get_nodb()->prepare($sql);
           $stmt->execute();
-          echo 'Database ' . DBNAME . ' has been deleted.';
+          echo 'Database: "' . DBNAME . '" has been dropped.';
         }
       } catch (Exception $e) {
         echo $e->getMessage();
@@ -24,6 +24,7 @@
       $stmt->execute();
       $stmt->setFetchMode(PDO::FETCH_ASSOC);
       if (empty($stmt->fetch())) {
+        echo 'Database: "' . DBNAME . '" does not exist and can not be dropped.';
         return false;
       }
       return true;

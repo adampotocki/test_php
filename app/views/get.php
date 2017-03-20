@@ -21,12 +21,12 @@
     </tr>
   </thead>
   <tbody>
-    <? if (empty($students)) { ?>
+    <?php if (empty($students)) { ?>
       <tr class="text-center">
         <td colspan="5">No students found</td>
       </tr>
-    <? } else { ?>
-      <? foreach ($students as $key => $value) { ?>
+    <?php } else { ?>
+      <?php foreach ($students as $key => $value) { ?>
         <tr>
           <td>
             <a href="#" class="edit"><?= $value->getId() ?></a>
@@ -40,7 +40,7 @@
             </a>
           </td>
         </tr>
-      <? } ?>
-    <? } ?>
+      <?php } ?>
+    <?php } ?>
   </tbody>
 </table>

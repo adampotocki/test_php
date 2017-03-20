@@ -10,7 +10,7 @@
           $sql = 'create database ' . DBNAME . ';';
           $stmt = Connection::get_nodb()->prepare($sql);
           $stmt->execute();
-          echo 'Database ' . DBNAME . ' has been created.';
+          echo 'Database: "' . DBNAME . '" has been created.';
         }
       } catch (Exception $e) {
         echo $e->getMessage();
@@ -26,6 +26,7 @@
       if (empty($stmt->fetch())) {
         return false;
       }
+      echo 'Database: "' . DBNAME . '"; is already created and ready to use.';
       return true;
     }
 

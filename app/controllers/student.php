@@ -8,7 +8,7 @@
     public function __construct() {
       try {
         $sql = 'CREATE TABLE IF NOT EXISTS ' . TABLE_NAME . '(
-          id SERIAL PRIMARY KEY ,
+          id SERIAL PRIMARY KEY,
           name CHARACTER VARYING(255) NOT NULL,
           dob DATE NOT NULL,
           active BOOLEAN NOT NULL
