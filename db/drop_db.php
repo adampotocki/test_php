@@ -34,4 +34,5 @@
 
   $obj = new Drop();
   $obj->drop_db();
+
 ?>

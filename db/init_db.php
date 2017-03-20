@@ -26,7 +26,7 @@
       if (empty($stmt->fetch())) {
         return false;
       }
-      echo 'Database: "' . DBNAME . '"; is already created and ready to use.';
+      echo 'Database: "' . DBNAME . '" is already created and ready to use.';
       return true;
     }
 
@@ -34,4 +34,5 @@
 
   $obj = new Init();
   $obj->create_db();
+
 ?>

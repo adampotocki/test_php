@@ -52,7 +52,8 @@
         $sql = 'SELECT * FROM ' . TABLE_NAME . ' ORDER BY ID DESC';
         $stmt = Connection::get_db()->prepare($sql);
         $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_CLASS, 'Student');
+        $result = $stmt->fetchAll(PDO::FETCH_CLASS, 'Student');
+        return $result;
       } catch (Exception $e) {
         throw $e;
       }
@@ -81,4 +82,21 @@
       }
     }
 
+
+    public function importStudent($student) {
+      try {
+        $sql = 'INSERT INTO ' . TABLE_NAME . ' (id, name, dob, active) VALUES (:id, :name, :dob, :active)';
+        $stmt = Connection::get_db()->prepare($sql);
+        $stmt->bindValue(':id', $student->getId());
+        $stmt->bindValue(':name', $student->getName());
+        $stmt->bindValue(':dob', $student->getDob());
+        $stmt->bindValue(':active', $student->getActive());
+        return $stmt->execute();
+      } catch (Exception $e) {
+        throw $e;
+      }
+    }
+
   }
+
+?>

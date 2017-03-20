@@ -4,7 +4,6 @@
 
   $ctrl = new StudentController();
   $students = $ctrl->getStudents();
-
 ?>
 
 <div class="col-sm-12 text-center">
