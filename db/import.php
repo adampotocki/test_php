@@ -3,8 +3,6 @@
   require_once(dirname(__FILE__) . '/connection.php');
   require_once(dirname(__FILE__) . '/../app/models/student.php');
 
-  DEFINE('TABLE_NAME', 'student_table');
-
   function csv_to_array($filename = '', $delimiter = ',') {
     if (!file_exists($filename) || !is_readable($filename)) {
       return FALSE;

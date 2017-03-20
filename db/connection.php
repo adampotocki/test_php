@@ -1,10 +1,11 @@
 <?php
 
   DEFINE('DBHOST', 'localhost');
-  DEFINE('DBNAME', 'students_db');
+  DEFINE('DBNAME', 'test');
   DEFINE('DBUSER', 'potockra');
   DEFINE('DBPASS', '');
   DEFINE('DBPORT', '5432');
+  DEFINE('TABLE_NAME', 'student_table');
 
   class Connection extends PDO {
     private static $db;

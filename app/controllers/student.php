@@ -3,8 +3,6 @@
   require_once(dirname(__FILE__) . '/../../db/connection.php');
   require_once(dirname(__FILE__) . '/../models/student.php');
 
-  DEFINE('TABLE_NAME', 'student_table');
-
   class StudentController {
 
     public function __construct() {
